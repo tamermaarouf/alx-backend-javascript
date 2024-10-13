@@ -1,0 +1,18 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v173)
+"   /home/tamer/alx-backend-javascript/0x01-ES6_promise/node_modules/eslint
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  (marks)  mf:mark file  mt:set target  mm:move  mc:copy
+" ==============================================================================
+../                                             0 Sun 06 Oct 2024 05:42:07 AM EEST
+./                                              0 Sun 06 Oct 2024 05:42:53 AM EEST
+CHANGELOG.md                               443469 Fri 04 Oct 2024 08:02:54 PM EEST
+LICENSE                                      1094 Fri 04 Oct 2024 08:02:54 PM EEST
+README.md                                   17377 Fri 04 Oct 2024 08:02:55 PM EEST
+bin/                                            0 Fri 04 Oct 2024 08:02:55 PM EEST
+conf/                                           0 Fri 04 Oct 2024 08:02:55 PM EEST
+lib/                                            0 Fri 04 Oct 2024 08:03:19 PM EEST
+messages/                                       0 Fri 04 Oct 2024 08:03:20 PM EEST
+node_modules/                                   0 Fri 04 Oct 2024 08:02:41 PM EEST
+package.json                                 4069 Fri 04 Oct 2024 08:02:49 PM EEST
