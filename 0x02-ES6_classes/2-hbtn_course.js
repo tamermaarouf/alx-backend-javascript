@@ -12,9 +12,9 @@
 export default class HolbertonCourse {
   /**
    * Constructor attributes
-   * name: String
-   * length: Number
-   * students: array of Strings
+   * @param name: String
+   * @param length: Number
+   * @param students: array of Strings
    */
   constructor(name, length, students) {
     this.name = name;
