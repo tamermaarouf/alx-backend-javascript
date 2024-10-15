@@ -20,7 +20,9 @@ export default class HolbertonCourse {
   /**
    * Gets the name of this course.
    */
-  get name() { return this._name; }
+  get name() {
+    return this._name;
+  }
 
   /**
    * set the name of this course.
@@ -35,7 +37,9 @@ export default class HolbertonCourse {
   /**
    * Get the length of this course
    */
-  get length() { return this._length; }
+  get length() {
+    return this._length;
+  }
 
   /**
    * set the length
@@ -50,7 +54,9 @@ export default class HolbertonCourse {
   /**
    * Get the student
    */
-  get students() { return this._students; }
+  get students() {
+    return this._students;
+  }
 
   /**
    * Sets the names of students in this course.
@@ -62,6 +68,6 @@ export default class HolbertonCourse {
     if (!setStudents.every((student) => typeof student === 'string')) {
       throw new TypeError('Students must be an array of strings');
     }
-    this._student = setStudents;
+    this._students = setStudents;
   }
 }
