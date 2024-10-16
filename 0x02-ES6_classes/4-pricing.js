@@ -8,15 +8,25 @@ export default class Pricing {
 
   get amount() { return this._amount; }
 
-  set amount(setAmount) { this._amount = setAmount; }
+  set amount(setAmount) { 
+    if (typeof setAmount !== 'number') {
+      throw new TypeError('amount must be a number')
+    } 
+    this._amount = setAmount;
+    }
 
-  get currency() { return this.currency; }
+  get currency() { return this._currency; }
 
-  set currency(setCurrency) { this._currency = setCurrency; }
+  set currency(setCurrency) { 
+    if (!(setCurrency instanceof Currency)) {
+      throw new TypeError('currency must be a Currency')
+    }
+    this._currency = setCurrency; 
+  }
 
   displayFullPrice() {
-    const cur = new Currency(this._currency.code, this._currency.name).displayFullCurrency();
-    return `${this._amount} ${cur}`;
+    // const cur = new Currency(this._currency.code, this._currency.name).displayFullCurrency();
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
 
   static convertPrice(amount, conversionRate) {
