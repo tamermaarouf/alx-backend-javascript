@@ -1,5 +1,4 @@
 export default class Currency {
-<<<<<<< HEAD
   constructor(code, name) {
     this.code = code;
     this.name = name;
