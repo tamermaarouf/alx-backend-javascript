@@ -1,4 +1,4 @@
-export default function cleanSet (mySet, str) {
+export default function cleanSet(mySet, str) {
   let newItem = '';
   if (str.length !== 0) {
     for (const item of mySet) {
