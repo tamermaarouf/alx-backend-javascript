@@ -6,6 +6,8 @@
  * */
 
 export default function cleanSet(mySet, str) {
+	if (!mySet && !str)
+		return '';
   const newItem = [];
   if (str.length !== 0) {
     const iter = mySet.values();
