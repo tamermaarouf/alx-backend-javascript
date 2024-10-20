@@ -6,17 +6,13 @@
  * */
 
 export default function cleanSet(mySet, str) {
-	if (!mySet && !str)
-		return '';
-  const newItem = [];
-  if (str.length !== 0) {
-    const iter = mySet.values();
+  if (!mySet && !str && !(mySet instanceof Set) && typeof str !== 'string') return '';
+  const newItem = [];    const iter = mySet.values();
     for (let i = 0; i < mySet.size; i += 1) {
       const item = iter.next().value;
       if (typeof item === 'string' && item.startsWith(str)) {
         newItem.push(item.split(str)[1]);
       }
     }
-  }
   return newItem.join('-');
 }
