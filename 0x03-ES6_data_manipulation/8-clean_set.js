@@ -11,7 +11,7 @@ export default function cleanSet(mySet, str) {
     const iter = mySet.values();
     for (let i = 0; i < mySet.size; i += 1) {
       const item = iter.next().value;
-      if (item.startsWith(str)) {
+      if (typeof item === 'string' && item.startsWith(str)) {
         newItem.push(item.split(str)[1]);
       }
     }
