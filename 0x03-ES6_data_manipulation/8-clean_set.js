@@ -13,6 +13,7 @@ export default function cleanSet(mySet, str) {
   }
   const values = mySet.values();
   for (const value of values) {
+  	console.log(value.substring(str.length))
     if (typeof value === 'string' && value.startsWith(str)) newItem.push(value.substring(str.length));
   }
   return (newItem.join('-'));
