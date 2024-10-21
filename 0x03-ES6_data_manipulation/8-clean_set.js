@@ -12,7 +12,7 @@ export default function cleanSet(mySet, str) {
     const values = mySet.values();
     for (const value of values) {
       if (typeof value === 'string' && value.startsWith(str)) {
-      	const word = value.split(str)[1];
+        const word = value.split(str)[1];
         newItem.push(word);
       }
     }
