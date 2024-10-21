@@ -1,26 +1,19 @@
+/* Create a function named cleanSet that returns a string of all
+ * the set values that start with a specific string (startString).
+ * It accepts two arguments: a set (Set) and a startString (String).
+ * hen a value starts with startString you only append the rest of the string.
+ * The string contains all the values of the set separated by -.
+ * */
+
 export default function cleanSet (mySet, str) {
-  let newItem = '';
-  if (str.length !== 0) {
-    const iter = mySet.values();
-    for (let i = 0; i < mySet.size; i++) {
-      const cur = iter.next().value;
-      if (cur.startsWith(str)) {
-        newItem += cur.split(str)[1];
-        /* if (i !== (mySet.size)) {
-          newItem += '-';
-        } */
-      }
-      console.log(newItem);
-    }
-    /* for (const item of mySet) {
-      if ((item.startsWith(str))) {
-        newItem += item.split(str)[1];
-        if (!(Array.from(mySet).pop())) {
-          newItem += '-';
-        }
-      }
-    }
-    return newItem; */
+  const newItem = [];
+  if ((!mySet) || (!str) || !(mySet instanceof Set) ||
+(typeof str !== 'string') || (str.length === 0)) {
+    return (newItem.join(''));
   }
-  return newItem;
+  const values = mySet.values();
+  for (const value of values) {
+    if (typeof value === 'string' && value.startsWith(str)) newItem.push(value.substring(str.length));
+  }
+  return (newItem.join('-'));
 }
